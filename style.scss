@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=DM+Serif+Display&display=swap");
+@import"./abstracts/variables";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  font-size: 1.5rem;
+  width: 100%;
+  & h4,
+  & h5{
+    text-transform: uppercase;
+  }
+}
+p {
+  line-height: 2rem;
+  color: $second_color;
+}
+.orange {
+  color: $third-color;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+small{
+  font-size: 1.3rem;
+  font-style: italic
+}
+/**************** HEADER ***************/
+header {
+  width: 100%;
+}
+.wrapper-header{
+  width: 100%;
+  height: 80px;
+  & h1{
+    width: 30%;
+    margin: 20px 0px 0px 20px;
+    font-weight: bolder;
+  }
+  & nav {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 60%;
+  & ul{
+    float: right;
+    margin-top: 30px;
+  }
+    & ul li {
+    display: flex;
+    text-transform: capitalize;
+    margin-right: 2rem;
+    float: left;
+  
+    & a {
+      text-decoration: none;
+      color: $first-color;
+      font-weight: bold;
+    }
+    & a:hover {
+      border-bottom: 0.2rem solid $third-color;
+      transition: 0.2s ease;
+    }
+  }
+  }
+}
+/************** MAIN-IMAGE **************/
+#main-image {
+  height: 35rem;
+  width: 100%;
+  & img{
+    position: absolute;
+    width: 100%;
+    height: 600px;
+  }
+  & .wrapper{
+    position: absolute;
+    margin-left: 50%;
+    transform: translate(-50%,100%);
+    text-align: center;
+    & a {
+      position: relative;
+      font-size: 1.4rem;
+      bottom: -80px;
+      padding: 10px 25px;
+      text-decoration: none;
+      color: #FFF;
+      background-color: $third-color;
+      border-radius: 5px;
+      font-weight: bold;
+      &.button-1:hover {
+        color: #fff;
+        transition: 0.4s ease;
+        background-color: $button-hover;
+      }
+    }
+  }
+  & h2 {
+    margin-top: 80px;
+    font-size: 2.5rem;
+    color: $first-color;
+    font-weight: bold;
+    animation-name: titl;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 1s;
+    transform: translateX(-80rem);
+    animation-fill-mode: forwards;
+    @keyframes titl {
+      0% {
+        opacity: 0;
+        -webkit-transform: translateX(-20rem);
+                transform: translateX(-20rem);
+      }
+      70% {
+        -webkit-transform: translateY(3rem);
+                transform: translateY(3rem);
+      }
+      100% {
+        opacity: 1;
+        -webkit-transform: translateX(0%);
+                transform: translateX(0%);
+      }
+    }
+}}
+/************** STEPS *************/
+#steps ul {
+  display: flex;
+  margin-top: 8rem;
+  margin-bottom: 3rem;
+  & li {
+    width: 30rem;
+    float: left;
+    text-align: center;
+    padding-top: 8rem;
+  }
+}
+#step h4 {
+  margin-bottom: 2rem;
+}
+#step {
+  margin-bottom: 2rem;
+  & .wrapper ul li p{
+    
+  color: $text-color;
+  }
+}
+#step-1 {
+  background: url(./assets/steps-icon-1.png) no-repeat top center;
+}
+#step-2 {
+  background: url(./assets/steps-icon-2.png) no-repeat top center;
+}
+#step-3 {
+  background: url(./assets/steps-icon-3.png) no-repeat top center;
+}
+/************* POSSIBILITIES ************/
+#possibilities {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: $fifth-color;
+  height: 30rem;
+  padding: 30px 20px;
+  & .wrapper{
+    position: relative;
+    display: flex;
+    width: 100%;
+  }
+  & article{
+    display: flex;
+    width: 46rem;
+    height: 27rem;
+    float: left;
+    border-radius: 1rem;
+  }
+  & article h4{
+    padding-bottom: 2rem;
+    border-bottom: 0.1rem solid $second_color;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  & .article-1{
+    background: url(./assets/excursion.jpg) no-repeat center/cover; 
+  }
+  & .article-2{
+    background: url(./assets/beach.jpg) no-repeat center/cover;
+  }
+  & .overlay{
+    background: rgba($color: #fff, $alpha: 0.95);
+    height: 100%;
+    width: 19rem;
+    padding: 2rem;
+    border-radius: 1rem 0 0 1rem;
+    box-sizing: border-box;
+    text-align: center;
+    & p{
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+  }
+}
+#possibilities article:first-child{
+  margin-right: 2rem;
+}
+.overlay{
+  position: relative;
+  height: 100%;
+  & p{
+    font-size: 18px;
+    color: $text-color;
+  }
+  & .button-2{
+    position: relative;
+    text-decoration: none;
+    color: #FFF;
+    background-color: $third-color;
+    padding: 7px 15px;
+    font-weight: bold;
+    transition: .3s ease;
+    border-radius: 5px;
+    &.button-2:hover{
+      background-color: $button-hover;
+      color: $fourth-color;
+    }
+  }
+}
+/************* CONTACT *************/
+.content{
+  content: '';
+  border-top: 0.1rem solid $button-hover;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+#contact .wrapper{
+  padding: 6rem 0;
+  text-align: center;
+  & h5,
+  & p{
+    color: $first-color;
+  }
+  & h5{
+    margin: 0 auto;
+    font-weight: bold;
+  }
+  & p{
+    margin-top: 2rem;
+    font-size: 1.4rem;
+  }
+  form{
+    margin: 6rem 0 2rem 0;
+  }
+  label{
+    font-weight: bolder;
+    font-size: 1.4rem;
+    margin-right: 1rem;
+    color: $second_color;
+  }
+  input[type="text"]{
+    padding: 1rem;
+    font-size: 1.4rem;
+    margin-right: 2rem;
+    border: 0.2rem solid $second_color;
+    border-radius: 0.2rem;
+  }
+  .button-3{
+    background-color: $third-color;
+    font-weight: bolder;
+    font-size: 1.6rem;
+    color: #FFF;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    &.button-3:hover{
+      background-color: $button-hover;
+      transition: .3s ease;
+    }
+  }
+}
+/************ FOOTER ************/
+footer{
+  background-color: $first-color;
+  & h6{
+    color: $fourth-color;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-top: 1rem;
+    padding-top: 5rem;
+  }
+  & .Copyright{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    color: $second_color;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    & i{
+      font-size: 1.2rem;
+      margin-right: 5px;
+    }
+  }
+}

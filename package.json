@@ -1,0 +1,22 @@
+{
+  "name": "prj-travet-agencly",
+  "version": "1.0.0",
+  "description": "prj Travel Agencly",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bastardrosset/Travel-Agencly.git"
+  },
+  "author": "Xavier Bastard-rosset",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bastardrosset/HTML-SCSS-Creer-un-site-web/issues"
+  },
+  "homepage": "https://github.com/Bastardrosset/HTML-SCSS-Creer-un-site-web#readme",
+  "devDependencies": {
+    "sass": "^1.52.1"
+  }
+}

@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=DM+Serif+Display&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 1.5rem;
+  width: 100%;
+}
+body h4, body h5 {
+  text-transform: uppercase;
+}
+
+p {
+  line-height: 2rem;
+  color: #777;
+}
+
+.orange {
+  color: #bd7b00;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+small {
+  font-size: 1.3rem;
+  font-style: italic;
+}
+
+/**************** HEADER ***************/
+header {
+  width: 100%;
+}
+
+.wrapper-header {
+  width: 100%;
+  height: 80px;
+}
+.wrapper-header h1 {
+  width: 30%;
+  margin: 20px 0px 0px 20px;
+  font-weight: bolder;
+}
+.wrapper-header nav {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 60%;
+}
+.wrapper-header nav ul {
+  float: right;
+  margin-top: 30px;
+}
+.wrapper-header nav ul li {
+  display: flex;
+  text-transform: capitalize;
+  margin-right: 2rem;
+  float: left;
+}
+.wrapper-header nav ul li a {
+  text-decoration: none;
+  color: #444;
+  font-weight: bold;
+}
+.wrapper-header nav ul li a:hover {
+  border-bottom: 0.2rem solid #bd7b00;
+  transition: 0.2s ease;
+}
+
+/************** MAIN-IMAGE **************/
+#main-image {
+  height: 35rem;
+  width: 100%;
+}
+#main-image img {
+  position: absolute;
+  width: 100%;
+  height: 600px;
+}
+#main-image .wrapper {
+  position: absolute;
+  margin-left: 50%;
+  transform: translate(-50%, 100%);
+  text-align: center;
+}
+#main-image .wrapper a {
+  position: relative;
+  font-size: 1.4rem;
+  bottom: -80px;
+  padding: 10px 25px;
+  text-decoration: none;
+  color: #FFF;
+  background-color: #bd7b00;
+  border-radius: 5px;
+  font-weight: bold;
+}
+#main-image .wrapper a.button-1:hover {
+  color: #fff;
+  transition: 0.4s ease;
+  background-color: #005eda;
+}
+#main-image h2 {
+  margin-top: 80px;
+  font-size: 2.5rem;
+  color: #444;
+  font-weight: bold;
+  animation-name: titl;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-delay: 1s;
+  transform: translateX(-80rem);
+  animation-fill-mode: forwards;
+}
+@keyframes titl {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-20rem);
+    transform: translateX(-20rem);
+  }
+  70% {
+    -webkit-transform: translateY(3rem);
+    transform: translateY(3rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+}
+
+/************** STEPS *************/
+#steps ul {
+  display: flex;
+  margin-top: 8rem;
+  margin-bottom: 3rem;
+}
+#steps ul li {
+  width: 30rem;
+  float: left;
+  text-align: center;
+  padding-top: 8rem;
+}
+
+#step h4 {
+  margin-bottom: 2rem;
+}
+
+#step {
+  margin-bottom: 2rem;
+}
+#step .wrapper ul li p {
+  color: #454545;
+}
+
+#step-1 {
+  background: url(./assets/steps-icon-1.png) no-repeat top center;
+}
+
+#step-2 {
+  background: url(./assets/steps-icon-2.png) no-repeat top center;
+}
+
+#step-3 {
+  background: url(./assets/steps-icon-3.png) no-repeat top center;
+}
+
+/************* POSSIBILITIES ************/
+#possibilities {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #efefef;
+  height: 30rem;
+  padding: 30px 20px;
+}
+#possibilities .wrapper {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+#possibilities article {
+  display: flex;
+  width: 46rem;
+  height: 27rem;
+  float: left;
+  border-radius: 1rem;
+}
+#possibilities article h4 {
+  padding-bottom: 2rem;
+  border-bottom: 0.1rem solid #777;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+#possibilities .article-1 {
+  background: url(./assets/excursion.jpg) no-repeat center/cover;
+}
+#possibilities .article-2 {
+  background: url(./assets/beach.jpg) no-repeat center/cover;
+}
+#possibilities .overlay {
+  background: rgba(255, 255, 255, 0.95);
+  height: 100%;
+  width: 19rem;
+  padding: 2rem;
+  border-radius: 1rem 0 0 1rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+#possibilities .overlay p {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#possibilities article:first-child {
+  margin-right: 2rem;
+}
+
+.overlay {
+  position: relative;
+  height: 100%;
+}
+.overlay p {
+  font-size: 18px;
+  color: #454545;
+}
+.overlay .button-2 {
+  position: relative;
+  text-decoration: none;
+  color: #FFF;
+  background-color: #bd7b00;
+  padding: 7px 15px;
+  font-weight: bold;
+  transition: 0.3s ease;
+  border-radius: 5px;
+}
+.overlay .button-2.button-2:hover {
+  background-color: #005eda;
+  color: #fff;
+}
+
+/************* CONTACT *************/
+.content {
+  content: "";
+  border-top: 0.1rem solid #005eda;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+#contact .wrapper {
+  padding: 6rem 0;
+  text-align: center;
+}
+#contact .wrapper h5, #contact .wrapper p {
+  color: #444;
+}
+#contact .wrapper h5 {
+  margin: 0 auto;
+  font-weight: bold;
+}
+#contact .wrapper p {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+}
+#contact .wrapper form {
+  margin: 6rem 0 2rem 0;
+}
+#contact .wrapper label {
+  font-weight: bolder;
+  font-size: 1.4rem;
+  margin-right: 1rem;
+  color: #777;
+}
+#contact .wrapper input[type=text] {
+  padding: 1rem;
+  font-size: 1.4rem;
+  margin-right: 2rem;
+  border: 0.2rem solid #777;
+  border-radius: 0.2rem;
+}
+#contact .wrapper .button-3 {
+  background-color: #bd7b00;
+  font-weight: bolder;
+  font-size: 1.6rem;
+  color: #FFF;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+}
+#contact .wrapper .button-3.button-3:hover {
+  background-color: #005eda;
+  transition: 0.3s ease;
+}
+
+/************ FOOTER ************/
+footer {
+  background-color: #444;
+}
+footer h6 {
+  color: #fff;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bolder;
+  margin-top: 1rem;
+  padding-top: 5rem;
+}
+footer .Copyright {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  color: #777;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+footer .Copyright i {
+  font-size: 1.2rem;
+  margin-right: 5px;
+}
+
+/*# sourceMappingURL=styl.css.map */
